@@ -187,19 +187,30 @@ class AppCalculadora(tk.Tk):
     def janela_novo_alimento(self):
         top = tk.Toplevel(self)
         top.title("Novo Alimento")
-        top.geometry("300x250")
+        top.geometry("600x500")
 
-        ttk.Label(top, text="Nome:").pack(pady=5)
-        entry_nome = ttk.Entry(top)
-        entry_nome.pack()
+        frame_popup = ttk.Frame(top, padding=20)
+        frame_popup.pack(fill="both", expand=True)
 
-        ttk.Label(top, text="Tipo:").pack(pady=5)
-        combo_tipo = ttk.Combobox(top, values=["Por Grama", "Por Unidade"])
-        combo_tipo.pack()
+        ttk.Label(frame_popup, text="Nome do Alimento:", font=("Helvetica", 11)).pack(
+            pady=(10, 5)
+        )
+        entry_nome = ttk.Entry(frame_popup, width=40)
+        entry_nome.pack(pady=5)
 
-        ttk.Label(top, text="Calorias (kcal):").pack(pady=5)
-        entry_cal = ttk.Entry(top)
-        entry_cal.pack()
+        ttk.Label(frame_popup, text="Tipo de Medida:", font=("Helvetica", 11)).pack(
+            pady=(15, 5)
+        )
+        combo_tipo = ttk.Combobox(
+            frame_popup, values=["Por Grama", "Por Unidade"], width=38, state="readonly"
+        )
+        combo_tipo.pack(pady=5)
+
+        ttk.Label(frame_popup, text="Calorias (kcal):", font=("Helvetica", 11)).pack(
+            pady=(15, 5)
+        )
+        entry_cal = ttk.Entry(frame_popup, width=40)
+        entry_cal.pack(pady=5)
 
         def confirmar():
             nome = entry_nome.get()
@@ -219,7 +230,9 @@ class AppCalculadora(tk.Tk):
             except ValueError:
                 messagebox.showerror("Erro", "Verifique os dados.")
 
-        ttk.Button(top, text="Salvar", command=confirmar).pack(pady=10)
+        ttk.Button(frame_popup, text="Salvar Alimento", command=confirmar).pack(
+            pady=30, ipadx=20, ipady=5
+        )
 
     def excluir_alimento(self):
         selecionado = self.tree_alimentos.selection()
