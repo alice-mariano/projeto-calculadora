@@ -1,7 +1,12 @@
 [
     {
         "tipo": "unidade",
-        "nome": "Ma\u00e7\u00e3",
-        "calorias": 95.0
+        "nome": "P\u00e3o",
+        "calorias": 130.0
+    },
+    {
+        "tipo": "unidade",
+        "nome": "Ovo",
+        "calorias": 70.0
     }
 ]
