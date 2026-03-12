@@ -25,25 +25,25 @@ A aplicação permite cadastrar alimentos, registrar refeições e acompanhar o 
 
 Permite definir uma meta diária de calorias e visualizar o resumo do consumo.
 
-![Tela inicial](images/resumo.png.png)
+![Tela inicial](images/resumo.png)
 
 ### Gerenciamento de alimentos
 
 Tela para cadastrar, editar e visualizar alimentos disponíveis no sistema.
 
-![Gerenciar alimentos](images/alimentos.png.png)
+![Gerenciar alimentos](images/alimentos.png)
 
 ### Registro de refeição
 
 Permite registrar uma nova refeição com os alimentos cadastrados.
 
-![Nova refeição](images/refeições.png.png)
+![Nova refeição](images/refeições.png)
 
 ### Cadastro de novo alimento
 
 Tela utilizada para adicionar novos alimentos à base de dados.
 
-![Novo alimento](images/novo_alimento.png.png)
+![Novo alimento](images/novo_alimento.png)
 
 ## Estrutura do projeto
 
