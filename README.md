@@ -37,7 +37,7 @@ Tela para cadastrar, editar e visualizar alimentos disponíveis no sistema.
 
 Permite registrar uma nova refeição com os alimentos cadastrados.
 
-![Nova refeição](images/refeições.png)
+![Nova refeição](images/refeição.png)
 
 ### Cadastro de novo alimento
 
