@@ -41,7 +41,9 @@ Permite registrar uma nova refeição com os alimentos cadastrados.
 
 ### Cadastro de novo alimento
 
-Tela utilizada para adicionar novos alimentos à base de dados.
+Tela utilizada para adicionar novos alimentos à base de dados. 
+OBS: Os dados da aplicação são armazenados localmente no arquivo alimentos.json.
+Cada execução do programa manipula sua própria cópia dos dados.
 
 ![Novo alimento](images/novo_alimento.png)
 
